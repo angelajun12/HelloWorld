@@ -13,6 +13,9 @@
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue-Bold</string>
         </array>
+        <array key="Thonburi.ttc">
+            <string>Thonburi-Bold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -30,26 +33,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph3-gG-0Ne">
-                                <rect key="frame" x="46" y="529" width="41" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Movie"/>
-                                <connections>
-                                    <segue destination="1pa-82-aLM" kind="show" identifier="toMovieVC" id="JgE-lo-09L"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqO-VX-qEw">
-                                <rect key="frame" x="177" y="514" width="30" height="30"/>
+                                <rect key="frame" x="160" y="497" width="47" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="TV"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <state key="normal" title="TV">
+                                    <color key="titleColor" red="0.74225968767466544" green="1" blue="0.86012365153625392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Ckh-vE-09S" kind="show" identifier="toTVVC" id="joV-b8-v4A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-Lb-FGU">
-                                <rect key="frame" x="294" y="514" width="35" height="30"/>
+                                <rect key="frame" x="256" y="497" width="73" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Food"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <state key="normal" title="Food">
+                                    <color key="titleColor" red="0.74225968767466544" green="1" blue="0.86012365153625392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="W3Z-Ix-gDF" kind="show" identifier="toFoodVC" id="4ga-jJ-fK5"/>
                                 </connections>
@@ -58,6 +59,17 @@
                                 <rect key="frame" x="16" y="272" width="343" height="208"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph3-gG-0Ne">
+                                <rect key="frame" x="32" y="499" width="83" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <state key="normal" title="Movie">
+                                    <color key="titleColor" red="0.74225968767466544" green="1" blue="0.86012365153625392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1pa-82-aLM" kind="show" identifier="toMovieVC" id="JgE-lo-09L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.67339297279792754" green="0.19701470147426303" blue="0.038718284231552241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -77,12 +89,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50n-dF-nGP">
-                                <rect key="frame" x="161" y="396" width="53" height="21"/>
+                                <rect key="frame" x="148" y="274" width="101" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The-Avengers-2012" translatesAutoresizingMaskIntoConstraints="NO" id="InO-Qx-K0P">
+                                <rect key="frame" x="16" y="316" width="343" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.14750183495906399" green="0.27011675011345937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="oKG-TM-MN4"/>
@@ -101,12 +117,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3p-zg-5UU">
-                                <rect key="frame" x="166" y="370" width="42" height="21"/>
+                                <rect key="frame" x="168" y="292" width="90" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="marvels-agentsOfShield" translatesAutoresizingMaskIntoConstraints="NO" id="urX-DD-5fv">
+                                <rect key="frame" x="16" y="308" width="343" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.17584642161875871" green="0.58006800518134716" blue="0.15760881216185185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="f9S-J5-yRa"/>
@@ -124,10 +144,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygd-v9-N6V">
-                                <rect key="frame" x="166" y="307" width="42" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="LNh-Oe-C4V">
+                                <rect key="frame" x="16" y="347" width="343" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygd-v9-N6V">
+                                <rect key="frame" x="145" y="275" width="84" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -138,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyb-yM-nhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366" y="1762"/>
+            <point key="canvasLocation" x="365.60000000000002" y="1761.576354679803"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tzY-Ba-FlZ">
@@ -160,6 +184,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="The-Avengers-2012" width="591" height="362"/>
+        <image name="marvels-agentsOfShield" width="480" height="300"/>
         <image name="me" width="125" height="125"/>
+        <image name="pizza" width="300" height="300"/>
     </resources>
 </document>
